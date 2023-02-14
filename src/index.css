@@ -1,0 +1,28 @@
+:root{
+    --text-white: #f7f2f2;
+    --color-gradient: linear-gradient(135deg, rgba(0,255,184,1) 0%, rgba(98,0,255,1) 25%, rgba(214,0,255,1) 50%, rgba(233,0,212,1) 75%, rgba(255,0,134,1) 100%);
+    --bgcolor-black:#202020;
+    --bgcolor-body: #0f0f0f;
+  }
+  
+body{
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html{
+    scroll-behavior: smooth;
+  }
+  
+  
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-gradient);
+    border-radius: 10px;
+  }

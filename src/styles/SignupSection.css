@@ -1,0 +1,41 @@
+.signup-section{
+    margin: 0;
+    background-image: url('../images/image1.jpg');
+    background-size: cover;
+
+}
+.signup-section-c{
+    margin: 0;
+    padding-top: 300px;
+    padding-bottom: 20px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #0f0f0f, rgba(0,0,0,0))
+}
+.signup-border{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    width: 800px;
+    height: 700px;
+    padding: 4px;
+    box-shadow: 0 0 35px 5px #bbbbbb;
+    background: rgb(0,255,184);
+    background: linear-gradient(90deg, rgba(0,255,184,1) 0%, rgba(0,5,255,1) 38%, rgba(124,0,255,1) 64%, rgba(207,0,233,1) 82%, rgba(255,0,236,1) 100%);
+}
+
+@media screen and (min-width:767px) and (max-width:1023px){
+
+    .signup-border{
+        width: 600px;
+
+    }
+}
+@media screen and (max-width:767px){
+
+    .signup-border{
+        width: 400px;
+    }
+}

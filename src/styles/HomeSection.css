@@ -1,0 +1,140 @@
+.home-section{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 85vh;
+}
+.filtro{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 100%;
+    background: linear-gradient(rgba(0,0,0,0),#0f0f0f);
+}
+.home-section-video-c{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.home-section-video{
+    width: auto;
+}
+
+.home-section-info-c{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 80px;
+    background-color: transparent;
+    position: relative;
+    bottom: 200%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: home-animation 0.5s linear;
+}
+.home-section-info, .home-section-img{
+    flex: 1;
+}
+
+.home-section-img img{
+    width: 350px;
+    text-shadow: 0 0 10px #000;
+}
+.home-section-title{
+    font-size: 3rem;
+     
+}
+.title-name{
+    background-color: #a778f3;
+    background-image: var(--color-gradient);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+.title-text{
+    text-shadow: 0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000;
+}
+.home-section-description{
+    width: 80%;
+    font-size: 1.2rem;
+    text-align: justify;
+    text-shadow: 0 0 1px #000, 0 0 1px #000, 0 0 1px #000, 0 0 1px #000;
+}
+.home-section-btn-1{
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    color: var(--text-white);
+    background: var(--color-gradient);
+    cursor: pointer;
+}
+
+.home-section-btn-2{
+    font-size: 1.5rem;
+    border: 2px solid var(--text-white);
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-right: 20px;
+    color: var(--text-white);
+    background-color: transparent;
+    cursor: pointer;
+}
+.home-section-btn-2:hover{
+    background: var(--color-gradient);
+}
+.home-section-btn-1:hover{
+    background: linear-gradient(135deg,rgba(255,0,134,1) 0%,rgba(233,0,212,1) 25%,rgba(214,0,255,1) 50%,rgba(98,0,255,1) 75%,rgba(0,255,184,1) 100%);
+}
+
+@keyframes home-animation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@media screen and (min-width:767px) and (max-width:1023px) {
+
+    .home-section-img img{
+        width: 300px;
+    }
+    .home-section-title{
+        font-size: 2rem;
+    }
+    .home-section-description{
+        font-size: 1rem;
+    }
+    .home-section-btn-c button{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:767px){
+    .home-section-info-c{
+        flex-direction: column;
+        
+    }
+    .home-section-img{
+        
+        margin-top: 20px;
+    }
+    .home-section-img img{
+        width: 250px;
+    }
+    .home-section-title{
+        font-size: 2rem;
+    }
+    .home-section-description{
+        font-size: 1rem;
+    }
+    .home-section-btn-c button{
+        font-size: 1rem;
+    }
+}
