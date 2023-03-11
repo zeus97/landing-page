@@ -19,9 +19,8 @@ A lading page created with React.
 
 ## Features
 
-- Live previews
-- Fullscreen mode
-- Responsive
+- Live preview
+- Responsive Design
 
 
 ## Run Locally
@@ -53,7 +52,7 @@ Start the server
 
 ## Demo
 
-Insert gif or link to demo
+https://beat-bash-app.netlify.app/
 
 
 ## Authors
