@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { useInView } from 'react-intersection-observer';
 import '../../styles/LearnmoreSection.css';
-import foto1 from '../../images/prueba.jpg';
+
+//images
+import image1 from '../../images/learn1.jpg';
+import image2 from '../../images/learn2.jpg';
 
 function LearnmoreSection() {
     const [test, setTest] = useState<boolean>(false);
@@ -12,7 +15,6 @@ function LearnmoreSection() {
         }else{
             setTest(false);
         }
-        console.log(window.scrollY);
     }
 
     useEffect(() => {
@@ -41,6 +43,7 @@ function LearnmoreSection() {
                     </p>
                 </div>
                 <div className='learnmore-section1-img'>
+                    <img src={image1} />
                     <div className='learnmore-section1-img-f'>
 
                     </div>
@@ -51,6 +54,7 @@ function LearnmoreSection() {
         <section className='learnmore-section2'>
         <div ref={animation2Ref} className={animation2Observer ? 'learnmore-section2-c' : 'learnmore-section2-c'}>
                 <div className={animation2Observer ? 'learnmore-section2-img animation2': 'learnmore-section2-img'}>
+                    <img src={image2} />
                     <div className='learnmore-section2-img-f'>
 
                     </div>

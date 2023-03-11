@@ -1,6 +1,8 @@
 import React from 'react'
-import Signupform from '../forms/Signupform'
 import '../../styles/SignupSection.css';
+
+//Form component
+import Signupform from '../forms/Signupform'
 
 function SignupSection() {
   return (

@@ -21,7 +21,7 @@
     width: 800px;
     height: 700px;
     padding: 4px;
-    box-shadow: 0 0 35px 5px #bbbbbb;
+    box-shadow: 0 0 35px 5px #bbbbbbd2;
     background: rgb(0,255,184);
     background: linear-gradient(90deg, rgba(0,255,184,1) 0%, rgba(0,5,255,1) 38%, rgba(124,0,255,1) 64%, rgba(207,0,233,1) 82%, rgba(255,0,236,1) 100%);
 }
@@ -37,5 +37,10 @@
 
     .signup-border{
         width: 400px;
+    }
+}
+@media screen and (max-width:400px){
+    .signup-border{
+        width: 320px;
     }
 }

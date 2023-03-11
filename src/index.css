@@ -21,8 +21,7 @@ html{
     width: 15px;
   }
   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: var(--color-gradient);
     border-radius: 10px;
   }

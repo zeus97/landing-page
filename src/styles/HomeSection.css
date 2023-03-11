@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     width: 100%;
-    height: 85vh;
+    height: 100vh;
+    height: 100svh;
 }
 .filtro{
     width: 100%;
@@ -23,6 +24,7 @@
 
 .home-section-info-c{
     width: 80%;
+    height: 80%;
     margin: 0 auto;
     margin-top: 80px;
     background-color: transparent;
@@ -34,15 +36,26 @@
     animation: home-animation 0.5s linear;
 }
 .home-section-info, .home-section-img{
+    height: 100%;
     flex: 1;
+    display: flex;  
+}
+.home-section-info{
+    flex-direction: column;
+    justify-content: center;
+}
+.home-section-img{
+    justify-content: center;
+    align-items: center;
 }
 
 .home-section-img img{
-    width: 350px;
+    height: 70%;
+    margin-right: 100px;
     text-shadow: 0 0 10px #000;
 }
 .home-section-title{
-    font-size: 3rem;
+    font-size: 3.5rem;
      
 }
 .title-name{
@@ -59,7 +72,7 @@
 }
 .home-section-description{
     width: 80%;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-align: justify;
     text-shadow: 0 0 1px #000, 0 0 1px #000, 0 0 1px #000, 0 0 1px #000;
 }
@@ -102,39 +115,56 @@
 
 @media screen and (min-width:767px) and (max-width:1023px) {
 
-    .home-section-img img{
-        width: 300px;
-    }
+    
     .home-section-title{
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
-    .home-section-description{
-        font-size: 1rem;
-    }
-    .home-section-btn-c button{
-        font-size: 1rem;
+    .home-section-description, .home-section-btn-c button {
+        font-size: 1.2rem;
     }
 }
 
 @media screen and (max-width:767px){
+    
     .home-section-info-c{
         flex-direction: column;
-        
+        justify-content: center;
+        height: 100%;
+        margin-top: 100px;
     }
-    .home-section-img{
-        
-        margin-top: 20px;
+    .home-section-info, .home-section-img{
+        height: 50%;
+        width: 100%;
     }
     .home-section-img img{
-        width: 250px;
+        height: 70%;
+        margin-right: 0;
     }
     .home-section-title{
         font-size: 2rem;
+        text-align: center;
     }
     .home-section-description{
-        font-size: 1rem;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .home-section-btn-c{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .home-section-btn-c button{
+        padding: 5px 10px;
+    }
+}
+
+@media screen and (max-width:460px){
+    .home-section-title{
+        font-size: 1.8rem;
+    }
+    .home-section-description, .home-section-btn-c button {
         font-size: 1rem;
     }
 }
+
