@@ -19,7 +19,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: 80%;
     height: 560px;
     
 }
@@ -76,7 +76,7 @@
     align-items: center;
 }
 .learnmore-section2-info-c h1, .learnmore-section2-info-c p{
-    text-align: end;
+    
 }
 
 .animation1{

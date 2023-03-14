@@ -18,9 +18,6 @@
     height: 100%;
     overflow: hidden;
 }
-.home-section-video{
-    width: auto;
-}
 
 .home-section-info-c{
     width: 80%;
@@ -130,7 +127,7 @@
         justify-content: center;
         width: 100%;
         height: 100%;
-        margin-top: 100px;
+
     }
     .home-section-info, .home-section-img{
         height: 50%;
@@ -141,7 +138,7 @@
         margin-right: 0;
     }
     .home-section-title{
-        font-size: 2rem;
+        font-size: 2.2rem;
         text-align: center;
     }
     .home-section-description{
@@ -161,7 +158,7 @@
 
 @media screen and (max-width:460px){
     .home-section-title{
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
     .home-section-description, .home-section-btn-c button {
         font-size: 1rem;

@@ -7,7 +7,7 @@ function HomeSection() {
   return (
     <section className='home-section' id='home'>
         <div className='home-section-video-c'>
-            <video className='home-section-video' src={videoHome} autoPlay muted loop ></video>
+            <video className='home-section-video' src={videoHome} autoPlay muted loop width='auto' ></video>
         </div>
         <div className='filtro'></div>
         <div className='home-section-info-c'>
