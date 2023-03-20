@@ -18,6 +18,9 @@
     height: 100%;
     overflow: hidden;
 }
+.home-section-video{
+    width: 100%;
+}
 
 .home-section-info-c{
     width: 80%;
@@ -110,6 +113,11 @@
     }
 }
 
+@media screen and (max-width:1919px){
+    .home-section-video{
+        width: auto;
+    }
+}
 @media screen and (min-width:767px) and (max-width:1023px) {
 
     .home-section-title{
