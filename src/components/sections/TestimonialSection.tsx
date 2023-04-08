@@ -17,8 +17,9 @@ function TestimonialSection() {
     if(slider.current !== null){
       if(slider.current.children.length > 0){
         const firstChild = slider.current.children[0];
+        const slideWidth = slider.current.offsetWidth;
         slider.current.style.transition = '300ms ease-out all';
-        slider.current.style.transform = 'translateX(-600px)';
+        slider.current.style.transform = `translateX(-${slideWidth}px)`;
 
         const transition = ()=>{
           if(slider.current !== null){
