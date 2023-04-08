@@ -26,21 +26,9 @@
     background: linear-gradient(90deg, rgba(0,255,184,1) 0%, rgba(0,5,255,1) 38%, rgba(124,0,255,1) 64%, rgba(207,0,233,1) 82%, rgba(255,0,236,1) 100%);
 }
 
-@media screen and (min-width:767px) and (max-width:1023px){
+@media screen and (max-width:1023px){
 
     .signup-border{
-        width: 600px;
-
-    }
-}
-@media screen and (max-width:767px){
-
-    .signup-border{
-        width: 400px;
-    }
-}
-@media screen and (max-width:400px){
-    .signup-border{
-        width: 320px;
+        width: 80%;
     }
 }

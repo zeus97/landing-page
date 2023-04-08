@@ -82,6 +82,7 @@
     border-radius: 25px;
     padding: 10px 20px;
     margin-right: 20px;
+    margin-top: 10px;
     color: var(--text-white);
     background: var(--color-gradient);
     cursor: pointer;
@@ -93,6 +94,7 @@
     border-radius: 25px;
     padding: 10px 20px;
     margin-right: 20px;
+    margin-top: 10px;
     color: var(--text-white);
     background-color: transparent;
     cursor: pointer;
@@ -144,15 +146,18 @@
     .home-section-img img{
         height: 70%;
         margin-right: 0;
+        margin-bottom: 80px;
     }
     .home-section-title{
         font-size: 2.2rem;
         text-align: center;
     }
     .home-section-description{
+        width: 90%;
         margin: 0 auto;
-        margin-bottom: 10px;
-        margin-top: 10px;
+        padding: 10px;
+        text-align: center;
+        
     }
     .home-section-btn-c{
         display: flex;
@@ -165,11 +170,11 @@
 }
 
 @media screen and (max-width:460px){
-    .home-section-title{
-        font-size: 1.9rem;
+     .home-section-title{
+        font-size: 2rem;
     }
     .home-section-description, .home-section-btn-c button {
-        font-size: 1rem;
-    }
+        font-size: 1.1rem;
+    } 
 }
 
