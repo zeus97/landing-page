@@ -57,7 +57,7 @@ https://beat-bash-app.netlify.app/
 
 ## Authors
 
-- [@EnriqueGut09](https://github.com/zeus97)
+- [@Enrique Dev](https://github.com/zeus97)
 
 
 ## License
