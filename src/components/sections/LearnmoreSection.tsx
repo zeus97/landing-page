@@ -7,13 +7,15 @@ import image1 from '../../images/learn1.jpg';
 import image2 from '../../images/learn2.jpg';
 
 function LearnmoreSection() {
-    const [test, setTest] = useState<boolean>(false);
+
+    const [animation1, setAnimation1] = useState<boolean>(false);
+    const [animation2Ref, animation2Observer] = useInView();
 
     const handleScroll = ()=>{
         if (window.scrollY >= 230){
-            setTest(true);
+            setAnimation1(true);
         }else{
-            setTest(false);
+            setAnimation1(false);
         }
     }
 
@@ -26,8 +28,6 @@ function LearnmoreSection() {
     }, [window.scrollY])
     
 
-    const [animation1Ref, animation1Observer] = useInView();
-    const [animation2Ref, animation2Observer] = useInView();
     
 
     
@@ -35,7 +35,7 @@ function LearnmoreSection() {
   return (
     <>
         <section className='learnmore-section1' id='learnmore'>
-            <div ref={animation1Ref} className={test ? 'learnmore-section1-c animation1' : 'learnmore-section1-c'}>
+            <div  className={animation1 ? 'learnmore-section1-c animation1' : 'learnmore-section1-c'}>
                 <div className='learnmore-section1-info-c'>
                     <h1>Enjoy streaming music.</h1>
                     <p>Get the best music experience by streaming top hits
@@ -44,20 +44,16 @@ function LearnmoreSection() {
                 </div>
                 <div className='learnmore-section1-img'>
                     <img src={image1} />
-                    <div className='learnmore-section1-img-f'>
-
-                    </div>
+                    
                 </div>
             </div>
         </section>
 
         <section className='learnmore-section2'>
-        <div ref={animation2Ref} className={animation2Observer ? 'learnmore-section2-c' : 'learnmore-section2-c'}>
-                <div className={animation2Observer ? 'learnmore-section2-img animation2': 'learnmore-section2-img'}>
+        <div  className={animation2Observer ? 'learnmore-section2-c' : 'learnmore-section2-c hidden'}>
+                <div ref={animation2Ref} className={animation2Observer ? 'learnmore-section2-img animation2': 'learnmore-section2-img'}>
                     <img src={image2} />
-                    <div className='learnmore-section2-img-f'>
-
-                    </div>
+                    
                 </div>
                 <div className={animation2Observer ? 'learnmore-section2-info-c animation3' : 'learnmore-section2-info-c'}>
                     <h1>Create playlists.</h1>
