@@ -23,7 +23,7 @@
 }
 
 .home-section-info-c{
-    width: 80%;
+    width: 70%;
     height: 80%;
     margin: 0 auto;
     margin-top: 80px;
@@ -38,7 +38,7 @@
 .home-section-info, .home-section-img{
     height: 100%;
     flex: 1;
-    display: flex;  
+    display: flex; 
 }
 .home-section-info{
     flex-direction: column;
@@ -51,7 +51,6 @@
 
 .home-section-img img{
     height: 70%;
-    margin-right: 100px;
     text-shadow: 0 0 10px #000;
 }
 .home-section-title{
@@ -71,7 +70,6 @@
     text-shadow: 0 0 1px #000,0 0 1px #000,0 0 1px #000,0 0 1px #000;
 }
 .home-section-description{
-    width: 80%;
     font-size: 1.4rem;
     text-align: justify;
     text-shadow: 0 0 1px #000, 0 0 1px #000, 0 0 1px #000, 0 0 1px #000;
@@ -121,6 +119,9 @@
     }
 }
 @media screen and (min-width:767px) and (max-width:1023px) {
+    .home-section-info-c{
+        width: 80%;
+    }
 
     .home-section-title{
         font-size: 2.5rem;
@@ -145,7 +146,6 @@
     }
     .home-section-img img{
         height: 70%;
-        margin-right: 0;
         margin-bottom: 80px;
     }
     .home-section-title{

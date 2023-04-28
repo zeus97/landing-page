@@ -4,12 +4,16 @@
     --bgcolor-black:#202020;
     --bgcolor-body: #0f0f0f;
   }
-  
-body{
+
+  *{
     margin: 0;
     padding: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+body{
+    background-color: var(--bgcolor-body);
 }
 
 html{

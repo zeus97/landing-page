@@ -35,7 +35,7 @@ function LearnmoreSection() {
   return (
     <>
         <section className='learnmore-section1' id='learnmore'>
-            <div  className={animation1 ? 'learnmore-section1-c animation1' : 'learnmore-section1-c'}>
+            <div  className={animation1 ? 'learnmore-section1-c animation1' : 'learnmore-section1-c hidden'}>
                 <div className='learnmore-section1-info-c'>
                     <h1>Enjoy streaming music.</h1>
                     <p>Get the best music experience by streaming top hits
