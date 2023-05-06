@@ -50,8 +50,8 @@ function LearnmoreSection() {
         </section>
 
         <section className='learnmore-section2'>
-        <div  className={animation2Observer ? 'learnmore-section2-c' : 'learnmore-section2-c hidden'}>
-                <div ref={animation2Ref} className={animation2Observer ? 'learnmore-section2-img animation2': 'learnmore-section2-img'}>
+        <div ref={animation2Ref} className={animation2Observer ? 'learnmore-section2-c' : 'learnmore-section2-c hidden'}>
+                <div  className={animation2Observer ? 'learnmore-section2-img animation2': 'learnmore-section2-img'}>
                     <img src={image2} />
                     
                 </div>
