@@ -43,9 +43,9 @@ function Navbar() {
             </ul>
             <div>
               <i className="bi bi-list burger" onClick={handleShowList}></i>
-              <i className="bi bi-facebook socials"></i>
-              <i className="bi bi-instagram socials"></i>
-              <i className="bi bi-twitter socials"></i>
+              <i className="bi bi-facebook socials" title='Facebook'></i>
+              <i className="bi bi-instagram socials" title='Instagram'></i>
+              <i className="bi bi-twitter socials" title='Twitter'></i>
             </div>
         </nav>
     </header>

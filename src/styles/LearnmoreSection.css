@@ -40,7 +40,28 @@
     border-radius: 20px;
     box-shadow: 0 0 25px 5px #00aeff2c;
 }
-
+.learn-more-section-filter{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.learn-more-section-filter > div{
+    width: 40%;
+    height: 50%;
+    border-radius: 50%;
+    filter: blur(180px);
+}
+.learn-more-section-filter-one{
+    background-color: #ff0086;
+}
+.learn-more-section-filter-two{
+    background-color: #00ffb8;
+}
 
 .learnmore-section1-info-c, .learnmore-section2-info-c, .learnmore-section1-img,.learnmore-section2-img{
     flex: 1;
@@ -52,6 +73,7 @@
     background-color: #a778f3;
     background-image: var(--color-gradient);
     background-size: 100%;
+    background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
@@ -59,6 +81,7 @@
     
 }
 .learnmore-section1-info-c p, .learnmore-section2-info-c p{
+    position: relative;
     font-size: 1.8rem;
     width: 80%;
     margin-left: 15px;
@@ -126,6 +149,9 @@
         flex-direction: column-reverse;
         height: 100%;
     }
+    .learn-more-section-filter > div{
+        filter: blur(120px);
+    }
     
     .learnmore-section1-info-c h1, .learnmore-section2-info-c h1{
         font-size: 3.5rem;
@@ -143,6 +169,9 @@
 
 
 @media screen and (max-width:767px){
+    .learnmore-section1-c, .learnmore-section2-c{
+        width: 100%;
+    }
     
     .learnmore-section1-info-c h1, .learnmore-section2-info-c h1{
         font-size: 3rem;

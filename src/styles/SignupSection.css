@@ -2,7 +2,6 @@
     margin: 0;
     background-image: url('../images/image1.jpg');
     background-size: cover;
-
 }
 .signup-section-c{
     margin: 0;
@@ -13,22 +12,52 @@
     box-sizing: border-box;
     background: linear-gradient(to bottom, #0f0f0f, rgba(0,0,0,0))
 }
-.signup-border{
+.signup-border-c{
     margin: 0 auto;
+    position: relative;
     display: flex;
     justify-content: center;
-    border-radius: 20px;
+    align-items: center;
     width: 800px;
     height: 700px;
-    padding: 4px;
+    border-radius: 20px;
     box-shadow: 0 0 35px 5px #bbbbbbd2;
-    background: rgb(0,255,184);
-    background: linear-gradient(90deg, rgba(0,255,184,1) 0%, rgba(0,5,255,1) 38%, rgba(124,0,255,1) 64%, rgba(207,0,233,1) 82%, rgba(255,0,236,1) 100%);
+    overflow: hidden;
+}
+
+.signup-border{
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: #00ffb8;
+    background: conic-gradient(#ff58f3, #de58ff, #6358ff, #5dbdff, #00ffb8, #6358ff, #de58ff );
+    animation: border-animation 2s linear infinite;
+}
+.signup-border:hover{
+    animation: none;
+}
+
+@keyframes border-animation {
+    from {
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
 }
 
 @media screen and (max-width:1023px){
 
-    .signup-border{
+    .signup-border-c{
         width: 80%;
+        height: 600px;
+    }
+}
+@media screen and (max-width:425px){
+    .signup-border{
+        width: 1000px;
     }
 }

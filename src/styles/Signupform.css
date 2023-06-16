@@ -1,8 +1,9 @@
 .signup-c{
+    position: absolute;
     color: #080808;
     text-align: center;
-    width: 100%;
-    height: 100%;
+    width: 790px;
+    height: 690px;
     padding: 10px;
     border-radius: 20px;
     background-color: var(--text-white);
@@ -29,6 +30,7 @@
 .form-c input{
     outline: none;
     border-radius: 20px;
+    padding-left: 8px;
     height: 50px;
     font-size: 1rem;
     background-color: var(--text-white);
@@ -56,4 +58,21 @@
 .form-normal{
     border: 2px solid #000;
 }
+@media screen and (max-width:1023px){
 
+    .signup-c{
+        width: 98%;
+        height: 590px;
+    }
+}
+
+@media screen and (max-width:767px){
+    .signup-c h1{
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    .form-c, .signup-c button{
+        font-size: 1.2rem;
+    }
+   
+}

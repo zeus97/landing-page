@@ -8,8 +8,9 @@ function SignupSection() {
   return (
     <section className='signup-section'>
       <div className='signup-section-c'>
-        <div className='signup-border'>
-            <Signupform />
+        <div className='signup-border-c'>
+          <div className='signup-border'></div>
+          <Signupform />
         </div>
       </div>
     </section>

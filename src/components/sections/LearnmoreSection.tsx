@@ -35,11 +35,18 @@ function LearnmoreSection() {
   return (
     <>
         <section className='learnmore-section1' id='learnmore'>
+
             <div  className={animation1 ? 'learnmore-section1-c animation1' : 'learnmore-section1-c hidden'}>
                 <div className='learnmore-section1-info-c'>
+            
                     <h1>Enjoy streaming music.</h1>
                     <p>Get the best music experience by streaming top hits
                         and the hottest new songs from your favorite artists.
+
+                        <div className='learn-more-section-filter'>
+                            <div className='learn-more-section-filter-one'></div>
+                            <div className='learn-more-section-filter-two'></div>
+                        </div>
                     </p>
                 </div>
                 <div className='learnmore-section1-img'>
@@ -59,7 +66,12 @@ function LearnmoreSection() {
                     <h1>Create playlists.</h1>
                     <p>Create personalized playlists for yourself or friends.
                        Share your music with the world and discover new music
-                       from others. 
+                       from others.
+
+                       <div className='learn-more-section-filter'>
+                            <div className='learn-more-section-filter-one'></div>
+                            <div className='learn-more-section-filter-two'></div>
+                        </div>
                     </p>
                 </div>
             </div>
