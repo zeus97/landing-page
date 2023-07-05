@@ -4,10 +4,9 @@
     align-items: center;
     width: 100%;
     color: var(--text-white);
+    min-height: 1000px;
 }
 .learnmore-section1{
-    min-height: 100vh;
-    min-height: 100svh;
     background: linear-gradient(var(--bgcolor-body)20%,#333333 100%); 
 }
 .learnmore-section2{
@@ -21,8 +20,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
-    height: 560px;
+    max-width: 1265px;
+    height: 800px;
 }
 
 .learnmore-section1-img, .learnmore-section2-img{
@@ -34,8 +33,8 @@
     position: relative;
 }
 .learnmore-section1-img img, .learnmore-section2-img img{
-    width: 80%;
-    height: 70%;
+    width: 100%;
+    height: 50%;
     z-index: 10;
     border-radius: 20px;
     box-shadow: 0 0 25px 5px #00aeff2c;
@@ -165,6 +164,9 @@
         width: 100%;
         margin-left: 0;
         margin-bottom: 15px;
+    }
+    .learnmore-section1-img img, .learnmore-section2-img img{
+        width: 70%;
     }
 
 

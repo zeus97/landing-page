@@ -1,10 +1,10 @@
 .home-section{
+    position: relative;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     width: 100%;
-    height: 100vh;
-    height: 100svh;
+    height: 1050px;
 }
 .filtro{
     width: 100%;
@@ -23,8 +23,8 @@
 }
 
 .home-section-info-c{
-    width: 70%;
-    height: 80%;
+    max-width: 1265px;
+    height: 864px;
     margin: 0 auto;
     margin-top: 80px;
     background-color: transparent;
@@ -37,16 +37,17 @@
 }
 .home-section-info, .home-section-img{
     height: 100%;
-    flex: 1;
     display: flex; 
 }
 .home-section-info{
     flex-direction: column;
     justify-content: center;
+    flex: 2;
 }
 .home-section-img{
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
+    flex: 1;
 }
 
 .home-section-img img{
@@ -120,12 +121,12 @@
     }
 }
 @media screen and (min-width:767px) and (max-width:1023px) {
-    .home-section-info-c{
-        width: 80%;
-    }
 
     .home-section-title{
         font-size: 2.5rem;
+    }
+    .home-section-img img{
+        height: 60%;
     }
     .home-section-description, .home-section-btn-c button {
         font-size: 1.2rem;
@@ -138,12 +139,14 @@
         flex-direction: column;
         justify-content: center;
         width: 100%;
-        height: 100%;
 
     }
     .home-section-info, .home-section-img{
         height: 50%;
         width: 100%;
+    }
+    .home-section-img{
+        justify-content: center;
     }
     .home-section-img img{
         height: 70%;

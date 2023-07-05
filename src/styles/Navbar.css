@@ -5,8 +5,9 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999;
-    transition: all 0.3s linear;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
 }
 
 nav{
@@ -99,7 +100,7 @@ nav i{
         left: 0;
         flex-direction: column;
         justify-content: center;
-        background-color: var(--bgcolor-black);
+        background-color: #0000006c;
     }
     nav li{
         margin-bottom: 10px;

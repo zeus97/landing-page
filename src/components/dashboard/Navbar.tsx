@@ -37,9 +37,9 @@ function Navbar() {
     <header className={scrollnav ? 'scroll-nav' : ''}>
         <nav>
             <a href='#home'><span>BB</span></a>
-            <ul ref={list}>
-                <a href='#home'><li>Home</li></a>
-                <a href='#signup-form'><li>Sign up</li></a>
+            <ul ref={list} className={scrollnav ? 'scroll-nav' : ''}>
+                <a href='#home' onClick={handleShowList}><li>Home</li></a>
+                <a href='#signup-form' onClick={handleShowList}><li>Sign up</li></a>
             </ul>
             <div>
               <i className="bi bi-list burger" onClick={handleShowList}></i>
